@@ -15,10 +15,10 @@ jobs:
     - name: Send telegram message on push
       uses: appleboy/telegram-action@master
       with:
-        to: ${{ secrets.TG_ID }}
-        token: ${{ secrets.TG_TOKEN }}
+        to: ${{ secrets.git_CICD_bot }}
+        token: ${{ secrets.5890213407:AAGZn4fbu7uQvcsJ-0fosVhh4rxhRsZIBAs }}
         message: |
-          ${{ github.actor }} создал новый коммит: ${{ github.event.commits[0].message }}
+          ${{ github.actor }} создала новый коммит: ${{ github.event.commits[0].message }}
           Ссылка на коммит: https://github.com/${{ github.repository }}/commit/${{github.sha}}
           Репозиторий: https://github.com/${{ github.repository }}
             
